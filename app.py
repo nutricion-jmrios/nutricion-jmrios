@@ -54,11 +54,11 @@ else:
     # SECCIÓN DE LOGOS SUPERIORES
     col_logo1, col_logo2 = st.columns(2)
     with col_logo1:
-        # Reemplaza la URL entre comillas por el link real de la imagen del Hospital en el futuro
-        st.image("https://upload.wikimedia.org/wikipedia/commons/e/e4/Logo_Hospital_Placeholder.png", width=100, caption="Hosp. J.M. de los Ríos")
+        # Busca el archivo logo_hospital.png en tu repositorio
+        st.image("logo_hospital.jpg", width=100, caption="Hosp. J.M. de los Ríos")
     with col_logo2:
-        # Reemplaza la URL entre comillas por el link real de la imagen de tu Servicio en el futuro
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_la_Cruz_Roja.svg/640px-Bandera_de_la_Cruz_Roja.svg.png", width=100, caption="Servicio de Nutrición")
+        # Busca el archivo logo_servicio.png en tu repositorio
+        st.image("logo_servicionutricion.jpg", width=100, caption="Servicio de Nutrición")
 
     st.title("📝 Registro de Consulta")
     
