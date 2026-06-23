@@ -66,7 +66,14 @@ else:
     sexo = st.selectbox("Sexo *", ["M", "F"])
     fecha_nac = st.date_input("Fecha de Nacimiento *")
     
-    estado = st.text_input("Estado (Venezuela) *")
+    lista_estados = [
+    "Amazonas", "Anzoátegui", "Apure", "Aragua", "Barinas", "Bolívar", 
+    "Carabobo", "Cojedes", "Delta Amacuro", "Distrito Capital", "Falcón", 
+    "Guárico", "La Guaira", "Lara", "Mérida", "Miranda", "Monagas", 
+    "Nueva Esparta", "Portuguesa", "Sucre", "Táchira", "Trujillo", 
+    "Yaracuy", "Zulia"
+    ]
+estado = st.selectbox("Estado (Venezuela) *", lista_estados)
     ciudad = st.text_input("Ciudad *")
     municipio = st.text_input("Municipio *")
     zona_res = st.text_area("Zona Residencial / Dirección Exacta")
