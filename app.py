@@ -19,7 +19,11 @@ if "medico_adjunto_nombre" not in st.session_state:
 
 # --- PANTALLA 1: LOGIN DE ADJUNTOS ---
 if not st.session_state.autenticado:
-    st.title("🏥 Servicio de Nutrición")
+    # Título con logo alineado a la izquierda (Proporción 1 a 5)
+    col_tit1, col_tit2 = st.columns([1, 5])
+    with col_tit1:
+        st.image("logo_servicionutricion.jpg", width=60)
+
     st.subheader("Control de Acceso (Solo Adjuntos)")
     
     alias = st.text_input("Alias de Usuario")
