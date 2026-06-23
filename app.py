@@ -73,7 +73,7 @@ else:
     "Nueva Esparta", "Portuguesa", "Sucre", "Táchira", "Trujillo", 
     "Yaracuy", "Zulia"
     ]
-estado = st.selectbox("Estado (Venezuela) *", lista_estados)
+    estado = st.selectbox("Estado (Venezuela) *", lista_estados)
     ciudad = st.text_input("Ciudad *")
     municipio = st.text_input("Municipio *")
     zona_res = st.text_area("Zona Residencial / Dirección Exacta")
